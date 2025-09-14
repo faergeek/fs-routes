@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@faergeek/fs-routes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy to use monads for JavaScript and TypeScript",
   "repository": {
     "type": "git",
@@ -14,12 +14,11 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./types": "./types.d.ts"
+    "./types": "./src/types.d.ts"
   },
   "sideEffects": false,
   "files": [
     "dist",
-    "!dist/**/*.spec.*",
     "src",
     "!src/**/*.spec.ts"
   ],
