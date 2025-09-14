@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@faergeek/fs-routes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy to use monads for JavaScript and TypeScript",
   "repository": {
     "type": "git",
