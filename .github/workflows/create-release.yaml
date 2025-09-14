@@ -1,0 +1,28 @@
+name: create-release
+on:
+  push:
+    tags:
+      - v*
+permissions:
+  contents: read
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: asdf-vm/actions/install@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec git-cliff --current --strip all -o /tmp/release-notes.md
+      - uses: softprops/action-gh-release@v2
+        with:
+          body_path: /tmp/release-notes.md
+          token: ${{ steps.app-token.outputs.token }}
