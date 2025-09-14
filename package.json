@@ -14,12 +14,11 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./types": "./types.d.ts"
+    "./types": "./src/types.d.ts"
   },
   "sideEffects": false,
   "files": [
     "dist",
-    "!dist/**/*.spec.*",
     "src",
     "!src/**/*.spec.ts"
   ],
