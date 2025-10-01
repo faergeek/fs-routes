@@ -26,7 +26,7 @@ importers:
         version: 24.6.1
       '@types/react':
         specifier: ^19.1.13
-        version: 19.1.16
+        version: 19.1.17
       eslint:
         specifier: ^9.19.0
         version: 9.36.0(jiti@2.6.0)
@@ -531,8 +531,8 @@ packages:
   '@types/node@24.6.1':
     resolution: {integrity: sha512-ljvjjs3DNXummeIaooB4cLBKg2U6SPI6Hjra/9rRIy7CpM0HpLtG9HptkMKAb4HYWy5S7HUvJEuWgr/y0U8SHw==}
 
-  '@types/react@19.1.16':
-    resolution: {integrity: sha512-WBM/nDbEZmDUORKnh5i1bTnAz6vTohUf9b8esSMu+b24+srbaxa04UbJgWx78CVfNXA20sNu0odEIluZDFdCog==}
+  '@types/react@19.1.17':
+    resolution: {integrity: sha512-Qec1E3mhALmaspIrhWt9jkQMNdw6bReVu64mjvhbhq2NFPftLPVr+l1SZgmw/66WwBNpDh7ao5AT6gF5v41PFA==}
 
   '@typescript-eslint/eslint-plugin@8.44.1':
     resolution: {integrity: sha512-molgphGqOBT7t4YKCSkbasmu1tb1MgrZ2szGzHbclF7PNmOkSTQVHy+2jXOSnxvR3+Xe1yySHFZoqMpz3TfQsw==}
@@ -2726,7 +2726,7 @@ snapshots:
     dependencies:
       undici-types: 7.13.0
 
-  '@types/react@19.1.16':
+  '@types/react@19.1.17':
     dependencies:
       csstype: 3.1.3
 
