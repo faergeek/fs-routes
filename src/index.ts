@@ -238,10 +238,7 @@ export function virtualRoutes(dir: string): webpack.WebpackPluginInstance {
 
                   return x.exports;
                 })
-                .map(x => {
-                  invariant(typeof x === 'string');
-                  return x;
-                })
+                .map(x => (typeof x === 'string' ? x : x.name))
                 .filter(
                   x =>
                     x === 'Component' ||
