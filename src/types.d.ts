@@ -28,8 +28,7 @@ declare module 'virtual:@faergeek/fs-routes' {
   }
 
   export type VirtualRouteObject =
-    | VirtualNonIndexRouteObject
-    | VirtualIndexRouteObject;
+    VirtualNonIndexRouteObject | VirtualIndexRouteObject;
 
   const routes: VirtualRouteObject[];
 
